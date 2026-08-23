@@ -28,4 +28,22 @@ This repository is the export-ready canonical record of the approved work create
 
 ## Repository use
 
-This repository contains strategic and production design documentation, not deployment code. It is ready to be committed and pushed to a GitHub repository once a remote URL and intended visibility are selected.
+This repository now includes a dependency-free, responsive launch site built from the canonical Cobalt Assembly system:
+
+- `index.html` is the public homepage and interactive Precision Path diagnostic.
+- `tokens.css` contains the canonical blue, silver, and light-mode design tokens.
+- `config.js` is the only place checkout URLs need to be added before sales go live.
+- `.github/workflows/deploy-pages.yml` deploys the static site to GitHub Pages after a push to `main`.
+
+## Local preview
+
+Run a static server from the repository root, then open `index.html` in a browser. No build step or package installation is required.
+
+## Revenue launch checklist
+
+1. Create and fulfil the first launch offers (for example, Market Premise, Glassline Identity, and Release Current).
+2. Add their secure HTTPS checkout URLs to `config.js`.
+3. Enable GitHub Pages for this repository using GitHub Actions as the source, then push `main`.
+4. Test every checkout and the delivery flow before promoting the site.
+
+Until checkout URLs are added, product CTAs intentionally return visitors to the Precision Path diagnostic instead of sending them to a broken purchase flow.
