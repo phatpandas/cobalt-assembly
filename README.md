@@ -16,6 +16,7 @@ This repository is the export-ready canonical record of the approved work create
 | [04 Website Architecture](docs/04-website-architecture.md) | Sitemap, navigation, homepage, product pages, conversion paths, and deck outline |
 | [05 Launch Funnel](docs/05-launch-funnel.md) | Lead magnet, email journey, conversion path, offer ladder, and cross-sells |
 | [06 Weekly Release Schedule](docs/06-weekly-release-schedule.md) | Sustainable publishing cadence and twelve-week release season |
+| [07 Automation System](docs/07-automation-system.md) | Approval-gated content, product, SaaS, and marketing operating loops |
 | [Asset Directory](assets/README.md) | Reserved location for future production logo, motion, and campaign assets |
 
 ## Design guardrails
