@@ -4,7 +4,7 @@
 
   --font-display: "Bricolage Grotesque", "Arial Narrow", sans-serif;
   --font-body: "IBM Plex Sans", Arial, sans-serif;
-  --font-mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+  --font-mono: var(--font-body);
 
   --color-canvas: oklch(12% 0.025 258);
   --color-canvas-deep: oklch(8.5% 0.018 258);
@@ -59,7 +59,7 @@
   --text-lg: clamp(1.125rem, 1.5vw, 1.375rem);
   --text-xl: clamp(1.5rem, 2.4vw, 2.25rem);
   --text-2xl: clamp(2.25rem, 4.5vw, 4.5rem);
-  --text-hero: clamp(4.1rem, 10.5vw, 10.75rem);
+  --text-hero: clamp(3.85rem, 9.5vw, 9.5rem);
 
   --radius-sm: 0.6rem;
   --radius-md: 1rem;

@@ -48,7 +48,7 @@ The page is mostly dark cobalt and quiet ink. Electric cobalt is a directional s
 | Display | Bricolage Grotesque, 560–650, tight tracking, 0.84–0.98 line-height |
 | Section heading | Bricolage Grotesque, 540–560, compact composition |
 | Body | IBM Plex Sans, 400–600, generous but not airy leading |
-| System label | IBM Plex Mono, uppercase, 0.08–0.10em tracking |
+| System label | IBM Plex Sans 600, uppercase, 0.08–0.10em tracking |
 
 The first viewport is a marquee statement, not a centered SaaS template. Supporting type breaks the symmetry around it.
 
