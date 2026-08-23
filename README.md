@@ -2,7 +2,7 @@
 
 ## Canonical business ecosystem blueprint
 
-Cobalt Assembly is a couture-grade AI operating layer for modern digital businesses. It connects premium templates, focused micro-SaaS tools, and intelligent content products through a light-mode, blue-and-silver visual system.
+Cobalt Assembly is a sales-ready operating-assets studio for modern digital businesses. It connects premium templates, focused tools, and intelligent learning products through the dark, motion-led Cobalt Flux storefront system.
 
 This repository is the export-ready canonical record of the approved work created in this session. Superseded naming and catalog drafts are intentionally excluded.
 
@@ -19,20 +19,20 @@ This repository is the export-ready canonical record of the approved work create
 | [07 Automation System](docs/07-automation-system.md) | Approval-gated content, product, SaaS, and marketing operating loops |
 | [Asset Directory](assets/README.md) | Reserved location for future production logo, motion, and campaign assets |
 
-## Design guardrails
+## Current storefront direction
 
-- Strictly light-mode: white and near-white surfaces only.
-- Cobalt directs interaction; silver creates structure; white space creates luxury.
-- Motion must clarify state or relationship, never act as decoration alone.
-- Product experiences are component-led, accessible, editorial, and enterprise-grade.
+- Midnight cobalt is the working canvas; electric cobalt directs attention and checkout state.
+- The hero uses a hand-built Assembly Field to show relationships in motion, with a static reduced-motion fallback.
+- Product selection changes the sales desk; the primary CTA becomes live only for a configured secure checkout URL.
+- The design is intentionally distinct from its public visual reference: no imported screenshots, copied layouts, or borrowed product visuals.
 
 ## Repository use
 
 This repository now includes a dependency-free, responsive launch site built from the canonical Cobalt Assembly system:
 
-- `index.html` is the public homepage and interactive Precision Path diagnostic.
-- `tokens.css` contains the canonical blue, silver, and light-mode design tokens.
-- `config.js` is the only place checkout URLs need to be added before sales go live.
+- `index.html` is the public homepage, Assembly Field hero, offer selector, and sales desk.
+- `tokens.css` contains the Cobalt Flux visual tokens.
+- `config.js` is the only place provider-hosted checkout URLs need to be added before sales go live.
 - `.github/workflows/deploy-pages.yml` deploys the static site to GitHub Pages after a push to `main`.
 
 ## Local preview
@@ -42,8 +42,8 @@ Run a static server from the repository root, then open `index.html` in a browse
 ## Revenue launch checklist
 
 1. Create and fulfil the first launch offers (for example, Market Premise, Glassline Identity, and Release Current).
-2. Add their secure HTTPS checkout URLs to `config.js`.
+2. Create each product in a payment provider you own, then add its complete secure HTTPS checkout URL to `config.js`.
 3. Enable GitHub Pages for this repository using GitHub Actions as the source, then push `main`.
 4. Test every checkout and the delivery flow before promoting the site.
 
-Until checkout URLs are added, product CTAs intentionally return visitors to the Precision Path diagnostic instead of sending them to a broken purchase flow.
+Until a checkout URL is added, the corresponding CTA clearly reports “checkout link pending.” The site never handles card details; it opens the provider-hosted payment page only after the visitor clicks.

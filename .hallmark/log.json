@@ -1,6 +1,13 @@
 [
   {
     "date": "2026-08-23",
+    "macrostructure": "Marquee Hero",
+    "theme": "Cobalt Flux",
+    "enrichment": "custom hand-built SVG/CSS Assembly Field",
+    "brief": "Fluid, distinct, checkout-ready Cobalt storefront"
+  },
+  {
+    "date": "2026-08-23",
     "macrostructure": "Workbench",
     "theme": "Cobalt",
     "enrichment": "functional system workbench",

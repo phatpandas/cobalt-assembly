@@ -1,5 +1,7 @@
 # Cobalt Assembly — Website Architecture Master Document
 
+> **Current implementation note — 2026-08-23:** The live site is a focused single-page sales storefront with a Marquee Hero, Assembly Field, offer selector, and provider-hosted checkout handoff. The broader route map below remains the expansion architecture. Where an older visual detail conflicts with the active storefront, [03 Visual System](03-visual-system.md) takes precedence.
+
 ## Architecture principles
 
 - White-studio compositions provide the primary luxury field.

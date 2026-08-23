@@ -1,121 +1,123 @@
-# Cobalt Assembly — Visual System and Brand Assets
+# Cobalt Assembly — Cobalt Flux Storefront System
 
-## Logo and wordmark logic
+## Purpose
+
+Cobalt Flux is the active public storefront direction for Cobalt Assembly. It keeps the original open-orbit mark and the promise of precision in motion, but moves the customer-facing experience into a dark cobalt field built for discovery, selection, and provider-hosted checkout.
+
+The system is deliberately atmospheric without becoming cyberpunk: depth comes from restraint, not from neon, glass cards, particle fields, or borrowed product imagery.
+
+## Brand anchor
 
 ### The Assembly Mark
 
-The mark is an open-form symbol made from two offset orbital arcs:
+The mark remains two offset orbital arcs:
 
-- **Cobalt arc:** active intelligence, movement, and direction.
-- **Silver arc:** engineered framework, structure, and trust.
-- **Central aperture:** a white-space channel that communicates focus, assembly, and forward motion.
+- **Cobalt arc:** the active signal, direction, and commercial momentum.
+- **Quiet arc:** the supporting framework, constraint, and trust.
+- **Central aperture:** room for the next useful decision.
 
-It should feel like a precision instrument in motion, not a literal AI icon.
+Use the mark as a small, precise instrument. Do not stretch, rotate, bevel, or add a decorative shadow.
 
 ### Wordmark
 
-Set `Cobalt Assembly` in Sora SemiBold:
+Set Cobalt Assembly in Bricolage Grotesque:
 
 - Title case for the primary lockup.
-- Tight optical tracking within words; expanded space between them.
-- Default color: `ink-blue #26344B`.
-- No gradients inside the wordmark.
-- The mark carries cobalt and silver; the wordmark remains calm and editorial.
+- Tight tracking and a compact weight.
+- Ink-white on dark fields; never a gradient inside the wordmark.
+- The mark carries the electric accent so the wordmark can remain calm.
 
-### Lockups and usage
+## Color system
 
-| Asset | Use |
-|---|---|
-| Primary horizontal lockup | Header, footer, proposals, product pages |
-| Stacked lockup | Editorial covers and narrow modules |
-| Assembly Mark | Favicon, app icon, loading state, avatar |
-| Product lockup | `Cobalt Assembly / Product Name` |
+| Role | Token | Use |
+|---|---|---|
+| Deep field | --color-canvas-deep | Hero depth, footer, quiet negative space |
+| Working canvas | --color-canvas | Primary page surface |
+| Raised surface | --color-surface-raised | Selected sales desk and important utility surfaces |
+| Ink | --color-ink | Display type and high-priority information |
+| Quiet ink | --color-muted | Supporting copy and labels |
+| Electric cobalt | --color-accent | Active selection, CTA fill, orbital traces |
+| Signal | --color-signal | Reserved for positive operational status |
 
-- Clear space equals the width of the mark’s central aperture.
-- Minimum mark size: 24 px digital.
-- Minimum full lockup width: 140 px digital.
-- Use only on white, near-white, or silver surfaces.
-- Do not stretch, rotate, bevel, outline, or shadow the mark.
+The page is mostly dark cobalt and quiet ink. Electric cobalt is a directional signal, not a wallpaper color. Semantic colors stay out of decorative usage.
 
-## Component-level UI styling
-
-### Cards
-
-- White base, 16–24 px radius, silver hairline border.
-- Broad, pale, low-opacity elevation; never a hard dark shadow.
-- Hover: 2–4 px lift, subtle internal highlight, low-opacity spectral blue edge.
-- Featured cards may use a silver-to-white gradient and a single orbital trace.
-
-### Buttons
-
-| Button | Treatment |
-|---|---|
-| Primary | Accessible action-blue fill, white label, restrained cobalt-to-iris edge on hover |
-| Secondary | White fill, silver border, ink-blue label |
-| Tertiary | Text-first, cobalt label, directional icon |
-| Icon control | White/silver surface, 40–44 px target, cobalt focus ring |
-
-Use `#4A78FF` as the brand anchor. Use a deeper accessible blue derivative for small white labels where needed to maintain text contrast.
-
-### Inputs, navigation, and dashboards
-
-- Inputs use white fields, silver borders, and 12–14 px radius.
-- Focus uses a cobalt 2 px ring at low opacity.
-- Navigation uses white surfaces and a subtle lower border.
-- Dashboards use clear status states and mono labels; cobalt is reserved for active selection and meaningful data.
-
-## Editorial layout system
-
-- 12-column desktop grid, 8-column tablet grid, 4-column mobile grid.
-- Maximum visual width: 1440 px; core content width: 1200 px.
-- Gutters: 24 px mobile, 32 px tablet, 40 px desktop.
-- Spacing scale: `4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 96 / 128 / 160`.
-- Headlines anchor one side; live product artifacts occupy an offset adjacent field.
-- White space functions as a premium material, not unused space.
-
-### Type hierarchy
+## Type system
 
 | Role | Treatment |
 |---|---|
-| Display headline | Sora 56–88 px desktop |
-| Section heading | Sora 36–48 px |
-| Product heading | Sora 24–32 px |
-| Body | Manrope 16–18 px with generous leading |
-| UI label | Manrope 13–14 px, medium weight |
-| Data/system label | IBM Plex Mono 11–12 px |
+| Display | Bricolage Grotesque, 560–650, tight tracking, 0.84–0.98 line-height |
+| Section heading | Bricolage Grotesque, 540–560, compact composition |
+| Body | IBM Plex Sans, 400–600, generous but not airy leading |
+| System label | IBM Plex Mono, uppercase, 0.08–0.10em tracking |
 
-## Motion language — Sculpted Transitions
+The first viewport is a marquee statement, not a centered SaaS template. Supporting type breaks the symmetry around it.
 
-### Principles
+## Layout and component rules
 
-1. **Assemble:** elements arrive in ordered layers.
-2. **Orbit:** intelligence moves around a stable core.
-3. **Refract:** blue light shifts gently across silver edges.
-4. **Respond:** interaction feels immediate, controlled, and tactile.
+### Navigation
+
+- Use the detached, content-sized floating pill.
+- Keep the desktop link set to three core destinations: offers, method, checkout.
+- Let the cobalt CTA be the only filled control in the navigation.
+- Collapse to a compact menu on small screens; never force a full-width rounded bar.
+
+### Assembly Field
+
+The hero visual is a hand-built SVG/CSS field, not a product screenshot or stock animation:
+
+- Orbital lines show stable structure.
+- Dotted flow paths indicate moving decisions.
+- Nodes indicate active operating moments.
+- A small status label changes with the selected offer.
+
+It may sit behind or beside the display headline, but the headline stays primary. The field must be useful as an abstract expression of the product relationship even when its motion is disabled.
+
+### Offer selection and sales desk
+
+- Use a numbered, editorial offer list rather than a generic card grid.
+- One selected offer controls the price, description, delivery facts, and CTA state in the sales desk.
+- The sales desk is an opaque raised surface with a clear border; do not turn it into translucent glass.
+- A CTA is only secure checkout when a valid HTTPS provider URL exists.
+- With no URL, show Checkout link pending and explain exactly how the owner activates it.
+
+### Buttons and links
+
+| Control | Treatment |
+|---|---|
+| Primary sales CTA | Electric cobalt pill; opens provider-hosted checkout after a deliberate click |
+| Pending sales CTA | Quiet cobalt surface, clear pending language, no dead external destination |
+| Secondary CTA | Hairline outline, ink label |
+| Inline action | Text-first with a single directional glyph |
+
+## Motion language
+
+Motion explains the difference between a stable framework and a moving business signal.
 
 | Motion | Use | Specification |
 |---|---|---|
-| Assembly reveal | Cards and feature modules | 220–300 ms upward settle with 4–8 px travel |
-| Orbital trace | Hero and loading states | 9–14 s loop, 1 px line, low opacity |
-| Spectral sweep | Hover borders and active states | 1.2–1.8 s blue-to-iris movement |
-| Silver refract | Card hover and product previews | 180–240 ms highlight shift |
-| Data resolve | Charts and status change | 260–420 ms staggered progression |
-| Micro-response | Buttons, tabs, controls | 140–180 ms with no excess bounce |
+| Hero settle | Initial composition only | One coordinated 680–760 ms upward/scale settle |
+| Assembly Field current | Hero visual | One 3.8 s low-amplitude flow loop |
+| Offer selection | Active state and sales desk content | Immediate text/state change; no carousel |
+| Control feedback | Buttons and links | 150–220 ms color or 2 px lift |
+| Pending checkout | Owner-facing explanation | One brief note emphasis after click |
 
-Recommended spring character: stiffness 210, damping 24, mass 0.7. Reduced-motion mode removes continuous orbiting and uses short opacity changes instead.
+Respect prefers-reduced-motion. In reduced-motion mode, the field is static, transitions are effectively removed, and no information depends on animation.
 
-## Brand usage rules
+## Commerce boundary
 
-### Color balance
+Cobalt Assembly is a storefront, not a payment processor.
 
-- 70% white and near-white canvas
-- 20% silver and quiet surface structure
-- 7% cobalt and iris-blue interaction or motion
-- 3% or less aqua, rose, and amber semantic signals
+1. The owner creates the product and hosted checkout link in a payment provider they control.
+2. The owner pastes that full HTTPS URL into config.js.
+3. The appropriate offer CTA becomes live.
+4. The visitor clicks the CTA and completes payment only on the provider’s hosted checkout page.
 
-### Non-negotiables
+The public site never collects card data, creates charges, creates payment products, or silently sends a customer elsewhere.
 
-- No dark mode, black page sections, or charcoal fills.
-- No purple-led palette or neon cyberpunk styling.
-- No excessive glassmorphism, particle fields, or decorative motion.
-- No generic AI imagery; show systems, outcomes, materials, and intelligence in motion.
+## Non-negotiables
+
+- No fake browser chrome, dashboards, testimonials, logos, revenue claims, or product screenshots.
+- No copied layouts or imported UI from external visual references.
+- No generic aurora blobs, particle fields, auto-rotating carousels, or constant scroll reveals.
+- No checkout CTA that points to an empty, insecure, or unowned URL.
+- No motion that prevents reading, understanding, or keyboard access.
